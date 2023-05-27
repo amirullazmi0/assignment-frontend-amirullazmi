@@ -2,8 +2,6 @@
 <p align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" width="400" alt="Laravel Logo"></p>
 
 
-<img  width="400" alt="Laravel Logo">
-
 Nama :  Amirull Azmi
 
 Backend : Laravel
