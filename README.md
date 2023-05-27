@@ -8,10 +8,14 @@
 </p>
 
 Nama :  Amirull Azmi
+
 Backend : Laravel
+
 Frontend :  React Js
 
 Menggunakan fitur laravel breeze react js
 
+
 file jsx terdapat pada folder ../resouces/js/Home.jsx
+
 file route terdapat pada folder ../routes/web.php
