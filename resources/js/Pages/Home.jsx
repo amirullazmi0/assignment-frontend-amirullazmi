@@ -4,16 +4,16 @@ import React, { useState } from 'react'
 
 export default function Home(props) {
     const [mahasiswa, setMahasiswa] = useState([
-        { id: '1', name: 'mahasiswa_1', ap1: '', ap2: '', ap3: '', ap4: '' },
-        { id: '2', name: 'mahasiswa_2', ap1: '', ap2: '', ap3: '', ap4: '' },
-        { id: '3', name: 'mahasiswa_3', ap1: '', ap2: '', ap3: '', ap4: '' },
-        { id: '4', name: 'mahasiswa_4', ap1: '', ap2: '', ap3: '', ap4: '' },
-        { id: '5', name: 'mahasiswa_5', ap1: '', ap2: '', ap3: '', ap4: '' },
-        { id: '6', name: 'mahasiswa_5', ap1: '', ap2: '', ap3: '', ap4: '' },
-        { id: '7', name: 'mahasiswa_7', ap1: '', ap2: '', ap3: '', ap4: '' },
-        { id: '8', name: 'mahasiswa_8', ap1: '', ap2: '', ap3: '', ap4: '' },
-        { id: '9', name: 'mahasiswa_9', ap1: '', ap2: '', ap3: '', ap4: '' },
-        { id: '10', name: 'mahasiswa_10', ap1: '', ap2: '', ap3: '', ap4: '' },
+        { id: '1', nama: 'mahasiswa_1', ap1: '', ap2: '', ap3: '', ap4: '' },
+        { id: '2', nama: 'mahasiswa_2', ap1: '', ap2: '', ap3: '', ap4: '' },
+        { id: '3', nama: 'mahasiswa_3', ap1: '', ap2: '', ap3: '', ap4: '' },
+        { id: '4', nama: 'mahasiswa_4', ap1: '', ap2: '', ap3: '', ap4: '' },
+        { id: '5', nama: 'mahasiswa_5', ap1: '', ap2: '', ap3: '', ap4: '' },
+        { id: '6', nama: 'mahasiswa_5', ap1: '', ap2: '', ap3: '', ap4: '' },
+        { id: '7', nama: 'mahasiswa_7', ap1: '', ap2: '', ap3: '', ap4: '' },
+        { id: '8', nama: 'mahasiswa_8', ap1: '', ap2: '', ap3: '', ap4: '' },
+        { id: '9', nama: 'mahasiswa_9', ap1: '', ap2: '', ap3: '', ap4: '' },
+        { id: '10', nama: 'mahasiswa_10', ap1: '', ap2: '', ap3: '', ap4: '' },
     ])
     const handleAp1Change = (e, i) => {
         const value = e.target.value;
@@ -60,28 +60,28 @@ export default function Home(props) {
         const aspek_penilaian_1 =
             mahasiswa.map((m) => {
                 return (
-                    { name: m.name, nilai: m.ap1 }
+                    { nama: m.nama, nilai: m.ap1 }
                 )
             })
 
         const aspek_penilaian_2 =
             mahasiswa.map((m) => {
                 return (
-                    { name: m.name, nilai: m.ap2 }
+                    { nama: m.nama, nilai: m.ap2 }
                 )
             })
 
         const aspek_penilaian_3 =
             mahasiswa.map((m) => {
                 return (
-                    { name: m.name, nilai: m.ap3 }
+                    { nama: m.nama, nilai: m.ap3 }
                 )
             })
 
         const aspek_penilaian_4 =
             mahasiswa.map((m) => {
                 return (
-                    { name: m.name, nilai: m.ap4 }
+                    { nama: m.nama, nilai: m.ap4 }
                 )
             })
 
@@ -114,7 +114,7 @@ export default function Home(props) {
                                         const i = m.id - 1;
                                         return (
                                             <tr className='text-center' key={m.id}>
-                                                <th>{m.name}</th>
+                                                <th>{m.nama}</th>
                                                 <td>
                                                     <select defaultValue={"1"} onChange={(e) => handleAp1Change(e, i)} className="select select-bordered w-full max-w-xs">
                                                         <option value={1}>1</option>
